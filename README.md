@@ -49,12 +49,3 @@
 ### 📡 FMCW Radar Vital Signs Monitor (NSTC Funded Research Lead)
 * **System Engineering:** Acted as Principal Investigator for an NSTC-funded project, developing a low-power, non-contact monitoring system utilizing an FMCW radar sensor paired with an **ESP32-C3** microcontroller.
 * **Firmware & Signal Processing:** Authored bare-metal embedded C++ firmware to ingest high-frequency data streams, transmitting payloads over Wi-Fi to a custom Python processing pipeline optimized for real-time DSP data extraction.
-
----
-
-## 📈 GitHub Insights
-
-<p align="center">
-  <img src="https://github-readme-stats.vercel.app/api?username=WanYing1224&show_icons=true&theme=radical" alt="Wan-Ying's GitHub Stats" width="48%" />
-  <img src="https://github-readme-stats.vercel.app/api/top-langs/?username=WanYing1224&layout=compact&theme=radical" alt="Wan-Ying's Top Languages" width="45%" />
-</p>
