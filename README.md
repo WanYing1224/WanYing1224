@@ -1,5 +1,5 @@
 <p align="center">
-  <h1 align="center">Hi there, I'm Wan-Ying (Kevelyn) Lin 👋</h1>
+  <h1 align="center">Hi there, I'm Kevelyn👋</h1>
   <p align="center">
     <strong>Computer Engineering Master's Student at USC</strong><br>
     Specializing in Digital VLSI Design | RTL & FPGA Acceleration | Hardware-Software Co-Design
@@ -30,18 +30,18 @@
 
 ## 🚀 Featured Engineering Projects
 
-### 🧠 BFloat16 Tensor Core SoC on NetFPGA (Earthquake Detection)
+### 🧠 [BFloat16 Tensor Core SoC on NetFPGA (Earthquake Detection)](https://github.com/WanYing1224/ANN_NetFPGA-Earthquakes_Detection) <a href="https://github.com/WanYing1224/ANN_NetFPGA-Earthquakes_Detection"><img src="https://img.shields.io/badge/View_Source_Code-2C3E50?style=flat-square&logo=github&logoColor=white" alt="View Code" /></a>
 * **Architecture Design:** Developed a 4-thread inline ARM CPU pipeline and a custom BFloat16 Tensor Core accelerator directly inside a NetFPGA network datapath to bypass host-PC latency bounds.
 * **Hardware Optimization & Timing Closure:** Resolved critical LUT resource overflows on a constrained Virtex-II Pro FPGA by replacing duplicated MAC units with hand-optimized Xilinx primitives (`MUXCY`, `XORCY`, `LUT2`), effectively closing timing.
 * **Memory Subsystem:** Architected a Tri-BRAM Harvard memory layout (segregating features, weights, and biases) featuring a 3-zone address decoder to completely eliminate bus contention between the CPU and Tensor Core.
 * **Verification:** Simulated the entire RTL pipeline using **ModelSim**, debugging a control FSM state-retention defect and demonstrating a ~98% classification accuracy against a reference GPU baseline.
 
-### ⚡ Full-Custom CMOS 512-Bit SRAM Layout & Analysis
+### ⚡ [Full-Custom CMOS 512-Bit SRAM Layout & Analysis](https://github.com/WanYing1224/512Bit_SRAM_ARRAY_DESIGN) <a href="https://github.com/WanYing1224/512Bit_SRAM_ARRAY_DESIGN"><img src="https://img.shields.io/badge/View_Source_Code-2C3E50?style=flat-square&logo=github&logoColor=white" alt="View Code" /></a>
 * **Transistor-Level Design:** Designed a complete 512-bit (32-word $\times$ 16-bit) SRAM architecture in **Cadence Virtuoso XL**, including the 6T bitcell matrix, 3-to-8 row decoders, sense amplifiers, write drivers, and pre-decoders.
 * **Physical Layout:** Executed full-custom physical cell layouts for all 10 distinct sub-blocks, achieving 100% clean **Pegasus DRC/LVS verification** with zero final layout iterations.
 * **Timing & SI Verification:** Conducted **Spectre** simulations to derive minimum pulse-width constraints for 5 critical control signals to prevent bitline contention, alongside **HSPICE** signal integrity analysis of FinFET technology across 0.8V–1.2V voltage scaling.
 
-### 🧮 CUDA Accelerated Matrix Multiplication & Image Convolution
+### 🧮 [CUDA Accelerated Matrix Multiplication & Image Convolution](https://github.com/WanYing1224/CUDA_Lab) <a href="https://github.com/WanYing1224/CUDA_Lab"><img src="https://img.shields.io/badge/View_Source_Code-2C3E50?style=flat-square&logo=github&logoColor=white" alt="View Code" /></a>
 * **Parallel Performance:** Implemented and benchmarked parallel matrix multiplication approaches utilizing shared-memory tiling and **cuBLAS** on an NVIDIA RTX 3070 Ti, realizing a $3900\times$ compute speedup over the sequential CPU baseline.
 * **Hardware Diagnosis:** Profiled shared-memory architectures to isolate L2 cache dependencies under specific compute constraints, and engineered a cross-boundary architecture using pinned memory (`cudaHostRegister`) for optimized Python data streaming via **ctypes**.
 * **Filter Pipeline:** Scaled parallel kernels into an imaging pipeline (Gaussian, Sobel, Laplacian) utilizing constant memory for filter broadcasting, hitting a $1138\times$ performance increase.
